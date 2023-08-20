@@ -1,0 +1,92 @@
+@keyframes rotate {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 50px 0;
+  padding: 15px 30px 15px 50px;
+  width: 700px;
+  border: none;
+  border-radius: 15px;
+  background-color: #ffd166;
+  box-shadow: 0 0 10px 0px #000000;
+  box-sizing: border-box;
+}
+
+.label {
+  margin: 0 0 10px;
+  font-size: 20px;
+  line-height: 1;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.input {
+  padding: 0;
+  box-sizing: border-box;
+  width: 500px;
+  height: 50px;
+  font-size: 30px;
+  border: none;
+  outline: none;
+  background: none;
+  border-bottom: 2px solid #000;
+  transition: .2s;
+}
+
+.input:focus {
+  border-bottom: 2px solid rgba(72,202,228,1);
+}
+
+.button {
+  display: flex;
+  padding: 0;
+  width: 60px;
+  height: 60px;
+  border: none;
+  border-radius: 15px;
+  background: rgba(72,202,228,1);
+  box-shadow: 0 0 10px 0px #000000;
+  cursor: pointer;
+  transition: background .3s;
+  animation: rotate .2s forwards;
+}
+
+.button:hover {
+  background: rgba(0,115,176,1);
+}
+
+.buttonDisabled {
+  pointer-events: none;
+  display: flex;
+  padding: 0;
+  width: 60px;
+  height: 60px;
+  border: none;
+  border-radius: 15px;
+  background: #272727;
+  box-shadow: 0 0 10px 0px #000000;
+  transition: background .3s;
+}
+
+.buttonIcon {
+  margin: auto;
+  width: 40px;
+  height: 40px;
+  transition: transform .3s;
+}
+
+.button:hover .buttonIcon {
+  transform: rotate(-45deg)
+}

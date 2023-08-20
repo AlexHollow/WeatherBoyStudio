@@ -1,0 +1,74 @@
+@keyframes logo {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(-10deg);
+  }
+
+  100% {
+    transform: rotate(10deg);
+  }
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
+  height: 100vh;
+  background-color: #272727;
+  z-index: 10;
+}
+
+.header {
+  position: relative;
+  margin: 40px 0 0;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.title {
+  margin: 0;
+  padding: 0;
+  font-size: 70px;
+  line-height: 1;
+  text-shadow: 0 0 5px #000;
+  color: #ffd166;
+}
+
+.logo {
+  width: 80px;
+  height: 80px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0px #000000;
+  background: linear-gradient(0deg, rgba(0,115,176,1) 13%, rgba(202,240,248,1) 80%);
+  animation: logo 1s linear(0 0%, 0 1.8%, 0.01 3.6%, 0.03 6.35%, 0.07 9.1%, 0.13 11.4%, 0.19 13.4%, 0.27 15%, 0.34 16.1%, 0.54 18.35%, 0.66 20.6%, 0.72 22.4%, 0.77 24.6%, 0.81 27.3%, 0.85 30.4%, 0.88 35.1%, 0.92 40.6%, 0.94 47.2%, 0.96 55%, 0.98 64%, 0.99 74.4%, 1 86.4%, 1 100%) infinite alternate;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 600px;
+}
+
+.error {
+  position: absolute;
+  top: 630px;
+  left: 263px;
+  margin: 0;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0px #000;
+  background-color: #ffd166;
+  text-shadow: 0 0 1px #000;
+  font-size: 18px;
+  color: red;
+  z-index: 100;
+}
